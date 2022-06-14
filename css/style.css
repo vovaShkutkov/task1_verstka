@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Оформляем "шапку" и "подвал" страницы*/
+header, footer{
+
+	color: blue;
+	background: lightblue;
+	font-size: 2em;
+	padding: 1em 0;
+	text-align: center;
+
+}
+/*Оформляем задний фон меню основы страницы*/
+.content{
+
+	background-image: url(../img/bg.png);
+	background-size: 200px;
+	background-repeat: repeat-y;
+	display: inline-block;
+}
+/*Размещение и офрмление контента*/
+div.content .nav{
+	width: 200px;
+	float: left;
+	
+}
+div.content .article h1, div.content .nav ul{
+	text-align: center;
+}
+div.content .nav p{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.content .nav ul{
+	
+	margin-bottom: 1em;
+	list-style: disc !important;
+}
+
+div.content .nav ul li{
+
+	font-size: 1.2em;
+	padding-bottom: 0.15em;
+}
+
+
+div.content .article{
+	margin-left: 200px;
+	background-image: url(../img/ball.png);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+
+div.content .article img{
+	width: 250px;
+	float: left;
+	margin: 5px;
+
+}
+
+.rasporka{
+	clear: both;
+}
+/*Описание разметки и оформления при узком размере экрана*/
+@media screen and (max-width: 1000px){
+
+.content{
+	background-image: none;
+}
+
+div.content .nav{
+width: 100%;
+float: none;
+background-image: url(../img/bg.png);
+background-size: 100%;
+}
+
+div.content .nav ul li{
+	display: inline-block}
+
+div.content .article{
+	
+	margin-left: 0;
+}
+
+
+
+}
